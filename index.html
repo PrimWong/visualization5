@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Countries Data Visualizations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://unpkg.com/d3-cloud/build/d3.layout.cloud.js"></script>
+  </head>
+<body>
+  <header>
+    <h1>Prim's World Countries Data Visualizations</h1>
+    <p>Interactive charts using D3.js and the REST Countries API by Prim Rajasurang Wongkrasaemongkol</p>
+    <a href="https://restcountries.com/">Data source : REST Countries API</a>
+
+  </header>
+  <div class="chart-container" id="bar-chart"><h2>Top 10 Populous Countries</h2>
+  <p>Populations of the top 10 most populous countries, measured in billion people.</p></div>
+  <div class="chart-container" id="map"><h2>World Map: Population by Capital</h2>
+  <p>Country's population through color intensity, with darker shades indicating higher population.</p></div>
+  <div class="chart-container" id="word-cloud"><h2>Languages Word Cloud</h2>
+  <p>Languages spoken across countries, with word size reflecting the number of countries using each language. French is the most used language in the world with 46 countries using French.</p></div>
+  <div class="tooltip" id="tooltip"></div>
+  <script src="js/barChart.js"></script>
+  <script src="js/mapChart.js"></script>
+  <script src="js/wordCloud.js"></script>
+</body>
+</html>

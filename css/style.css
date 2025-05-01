@@ -1,0 +1,30 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.chart-container {
+  max-width: 960px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
